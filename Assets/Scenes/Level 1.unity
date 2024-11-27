@@ -2004,7 +2004,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8089282769216838276, guid: 9172e84cad67b344f8583cc181429e9b, type: 3}
   m_PrefabInstance: {fileID: 1969852451331992250}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 607345473}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95f98d67a319e404eaa270cf899ce426, type: 3}
@@ -8651,7 +8651,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.237971
+  orthographic size: 9.223396
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -9346,6 +9346,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1826350739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &607345473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4580445301399550756, guid: 9172e84cad67b344f8583cc181429e9b, type: 3}
+  m_PrefabInstance: {fileID: 1969852451331992250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &614311805
 GameObject:
   m_ObjectHideFlags: 0
@@ -25535,6 +25540,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1826350739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1612453345 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3538321805619309429, guid: c9b8aab056a29664e9df763deed65ff8, type: 3}
+  m_PrefabInstance: {fileID: 1413812559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1619487601
 GameObject:
   m_ObjectHideFlags: 0
@@ -31498,6 +31514,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonJump
       objectReference: {fileID: 0}
+    - target: {fileID: 6827156044496729666, guid: 70e03990bcb773c418366116f1d95fd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 607345473}
+    - target: {fileID: 6827156044496729666, guid: 70e03990bcb773c418366116f1d95fd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33979,6 +34003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Finn
       objectReference: {fileID: 0}
+    - target: {fileID: 6703566340848101656, guid: 9172e84cad67b344f8583cc181429e9b, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1612453345}
     - target: {fileID: 6703566340848101656, guid: 9172e84cad67b344f8583cc181429e9b, type: 3}
       propertyPath: collisions.Array.data[0]
       value: 
