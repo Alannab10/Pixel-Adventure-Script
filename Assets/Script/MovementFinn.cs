@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovementFinn : MonoBehaviour
 {
+    public Joystick joystick;
     Rigidbody2D rigid;
     Animator anim;
     SpriteRenderer sprt;
@@ -30,7 +31,7 @@ public class MovementFinn : MonoBehaviour
 
     void Update() //SE EJECUTA SEGUN EL NUMERO DE FRAMES QUE PUEDA PROCESAR EL COMPUTADOR
     {
-        horizontalValue = Input.GetAxis("Horizontal");
+        horizontalValue = joystick.Horizontal;
         anim.SetBool("InMovement", horizontalValue != 0 ? true : false);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
@@ -60,11 +61,11 @@ public class MovementFinn : MonoBehaviour
 
         anim.SetBool("IsGrounded", isGrounded);
 
-        if (jumpActivated == true)
+        if (jumpActivated && isGrounded)
         {
             rigid.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim.SetTrigger("Jump");
-            jumpActivated = false;
+            jumpActivated = false;         
         }
 
     }
@@ -80,5 +81,13 @@ public class MovementFinn : MonoBehaviour
         {
             sprt.flipX = !sprt.flipX;
         }
+    }
+
+    public void JumpButtonPressed()
+    {
+        if (isGrounded)
+        {
+            jumpActivated = true;          
+        }       
     }
 }
